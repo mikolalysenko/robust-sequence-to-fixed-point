@@ -1,6 +1,6 @@
 {
   "name": "robust-sequence-to-fixed-point",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Turn a sequence of floats into a fixed point value",
   "main": "rb2fp.js",
   "directories": {
