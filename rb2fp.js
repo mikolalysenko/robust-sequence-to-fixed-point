@@ -11,7 +11,9 @@ function floatToBigNum(a) {
   var na = BN(fa[0]&((1<<24)-1))
   na = na.add(BN(fa[0]>>>24).ishln(24))
   na = na.add(BN(fa[1]).ishln(32))
-  na.ishln(ea+1024-52)
+  if(!db.denormalized(a)) {
+    na.ishln(ea+1022)
+  }
   if(a < 0) {
     return na.neg()
   }
@@ -28,3 +30,5 @@ function robustToFixed(seq) {
   }
   return r
 }
+
+module.exports.DECIMAL_POINT = 1074
