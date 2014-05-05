@@ -1,0 +1,38 @@
+{
+  "name": "robust-sequence-to-fixed-point",
+  "version": "1.0.0",
+  "description": "Turn a sequence of floats into a fixed point value",
+  "main": "rb2fp.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bn.js": "^0.3.1",
+    "double-bits": "^1.1.0"
+  },
+  "devDependencies": {
+    "tape": "^2.12.3"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/robust-sequence-to-fixed-point.git"
+  },
+  "keywords": [
+    "robust",
+    "sequence",
+    "to",
+    "fixed",
+    "point",
+    "big",
+    "integer"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/robust-sequence-to-fixed-point/issues"
+  },
+  "homepage": "https://github.com/mikolalysenko/robust-sequence-to-fixed-point"
+}

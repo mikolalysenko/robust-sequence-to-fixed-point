@@ -19,6 +19,9 @@ function floatToBigNum(a) {
 }
 
 function robustToFixed(seq) {
+  if(typeof seq === "number") {
+    return floatToBigNum(seq)
+  }
   var r = BN(0)
   for(var i=0; i<seq.length; ++i) {
     r = r.add(floatToBigNum(seq[i]))
